@@ -1,0 +1,36 @@
+nav {
+    color: #fff;
+    height: 100px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.container {
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 12.5%;
+}
+
+a {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+a.main-logo {
+    height: 150px;
+    width: 150px;
+
+}
+
+a.large-logo {
+    height: 100px;
+    width: 100px;
+}
+
+a.small-logo {
+    height: 50px;
+    width: 50px;
+}
