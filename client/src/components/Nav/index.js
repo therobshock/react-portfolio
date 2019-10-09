@@ -11,7 +11,7 @@ function Nav() {
         />
         <LargeLogo
           text='Portfolio'
-          style={{transform: 'scaleY(2)'}}
+          style={{transform: 'scaleY(2.5)', fontSize: '15px'}}
         />
         <SmallLogo
           icon="fab fa-linkedin-in"
@@ -22,7 +22,7 @@ function Nav() {
         />
         <LargeLogo 
           text='Blog'
-          style={{fontSize: '40px'}}
+          style={{fontSize: '30px'}}
         />
         <SmallLogo
           icon="fas fa-envelope"
