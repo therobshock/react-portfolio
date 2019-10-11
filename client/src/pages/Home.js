@@ -51,8 +51,11 @@ class Home extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
-          <Col size="md-12">
+        <Row 
+          fluid
+          flex="d-flex justify-content-center"
+        >
+          <Col size="lg-9">
             <Jumbotron>
               <h1>Portfolio Home Page</h1>
             </Jumbotron>
