@@ -14,20 +14,20 @@ export function MainLogo() {
     )
 }
 
-export function LargeLogo(props) {
+export function LargeLogo({style, text}) {
     return (
             <a className="large-logo" href="/">
                 <div className="stem"></div>
-                <p style={props.style}>{props.text}</p>
+                <p style={style}>{text}</p>
             </a>
     )
 }
 
-export function SmallLogo(props) {
+export function SmallLogo({style, icon}) {
     return (
         <a className="small-logo" href="/">
             <div className="stem"></div>
-            <p style={props.style}><i className={props.icon}></i></p>
+            <p style={style}><i className={icon}></i></p>
         </a>
     )
 }

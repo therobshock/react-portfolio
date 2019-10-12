@@ -4,6 +4,7 @@ import Jumbotron from "../components/Jumbotron";
 // import API from "../utils/API";
 // import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
+import "./style.css";
 
 class Home extends Component {
   state = {
@@ -50,17 +51,31 @@ class Home extends Component {
 
   render() {
     return (
-      <Container fluid>
-        <Row 
-          fluid
-          flex="d-flex justify-content-center"
-        >
-          <Col size="lg-9">
+      <Container 
+        fluid
+        flex="d-flex justify-content-center align-items-center"
+        style={{
+          boxSizing: 'border-box',
+          height: '100%',
+        }}
+      >
             <Jumbotron>
-              <h1>Portfolio Home Page</h1>
+              <Row>
+                <Col size="3">
+                  <div className="avatar">
+                    <img src="https://via.placeholder.com/100" alt="placeholder" />
+                  </div>
+                </Col>
+                <Col size="7">
+                  <div className="headline">Headline</div>
+                </Col>
+              </Row>
+              <Row>
+                <Col size="10">
+                  <p className="summary">Content</p>
+                </Col>
+              </Row>
             </Jumbotron>
-          </Col>
-        </Row>
       </Container>
     );
   }
