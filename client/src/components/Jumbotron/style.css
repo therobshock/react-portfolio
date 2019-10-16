@@ -1,6 +1,13 @@
 .jumbotron {
-    width: 80%;
+    width: 70%;
+    padding: 0;
+}
+
+.home-view {
     margin: 0;
     margin-top: 12.5%;
-    padding: 0;
+}
+
+.blogtab-view {
+    margin: 10px;
 }

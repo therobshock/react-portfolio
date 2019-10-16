@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import DeleteBtn from "../components/DeleteBtn";
-import Jumbotron from "../components/Jumbotron";
+// import Jumbotron from "../components/Jumbotron";
+import { FeatBlog } from "../components/BlogCards";
 // import API from "../utils/API";
 // import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
@@ -59,23 +60,11 @@ class Home extends Component {
           height: '100%',
         }}
       >
-            <Jumbotron>
-              <Row>
-                <Col size="3">
-                  <div className="avatar">
-                    <img src="https://via.placeholder.com/100" alt="placeholder" />
-                  </div>
-                </Col>
-                <Col size="7">
-                  <div className="headline">Headline</div>
-                </Col>
-              </Row>
-              <Row>
-                <Col size="10">
-                  <p className="summary">Content</p>
-                </Col>
-              </Row>
-            </Jumbotron>
+        <FeatBlog
+          avatar="https://via.placeholder.com/100"
+          headline="Headline"
+          content="content content content"
+        />
       </Container>
     );
   }

@@ -1,0 +1,27 @@
+.article-card {
+    background: #eee;
+    width: 80%;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 12.5%;
+    border-radius: 10px;
+    box-shadow: #ccc 5px 5px 5px 5px;
+
+}
+.avatar {
+    padding: 10px;
+}
+
+.content h2 {
+    margin-bottom: 5px;
+}
+
+.content p {
+    background: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+
+}

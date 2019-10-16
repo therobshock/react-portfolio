@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-function Jumbotron({ children }) {
+function Jumbotron({ children, addClass }) {
   return (
     <div
-      className="jumbotron"
+      className={`jumbotron ${addClass}`}
     >
       {children}
     </div>
