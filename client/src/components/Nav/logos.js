@@ -14,18 +14,18 @@ export function MainLogo() {
     )
 }
 
-export function LargeLogo({style, text}) {
+export function LargeLogo({style, text, link}) {
     return (
-            <a className="large-logo" href="/">
+            <a className="large-logo" href={link}>
                 <div className="stem"></div>
                 <p style={style}>{text}</p>
             </a>
     )
 }
 
-export function SmallLogo({style, icon}) {
+export function SmallLogo({style, icon, link}) {
     return (
-        <a className="small-logo" href="/">
+        <a className="small-logo" href={link} target="_blank">
             <div className="stem"></div>
             <p style={style}><i className={icon}></i></p>
         </a>

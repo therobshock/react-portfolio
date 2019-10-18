@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
+import Blogs from "./pages/Blogs";
+import Blog from "./pages/Blog";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -14,8 +14,8 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/books" component={Books} />
-          <Route exact path="/books/:id" component={Detail} />
+          <Route exact path="/blogs" component={Blogs} />
+          <Route exact path="/blogs/:id" component={Blog} />
           <Route component={NoMatch} />
         </Switch>
         <Footer />
