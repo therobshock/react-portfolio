@@ -6,6 +6,7 @@ import Blog from "./pages/Blog";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/blogs" component={Blogs} />
           <Route exact path="/blogs/:id" component={Blog} />
           <Route component={NoMatch} />
