@@ -14,7 +14,7 @@ font-family: 'Ruslan Display', cursive; */
 
 nav {
     color: #fff;
-    height: 100px;
+    height: 10%;
     background-color: rgb(75, 15, 75);
     position: relative;
 }
@@ -36,8 +36,8 @@ a {
 
 
 a.main-logo {
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
 
 }
 

@@ -1,0 +1,11 @@
+.perameter {
+    position: relative;
+    height: 100vh;
+}
+.viewport {
+    height: 80%;
+    overflow: scroll;
+}
+.viewport::-webkit-scrollbar {
+    display: none;
+}
