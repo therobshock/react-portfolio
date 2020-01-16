@@ -1,11 +1,12 @@
 .perameter {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 .viewport {
     height: 100%;
     overflow: scroll;
-    padding: 100px 20px 50px 20px;
+    padding-bottom: 200px;
 }
 .viewport::-webkit-scrollbar {
     display: none;

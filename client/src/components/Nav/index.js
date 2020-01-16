@@ -4,9 +4,7 @@ import "./style.css";
 
 function Nav() {
   return (
-      <div className="nav-fix">
-    <nav>
-        <div className="nav-trim"></div>
+    <nav className="navbar">
         <div className="container">
       <div className="logo-field d-flex justify-content-around align-items-center">
         <SmallLogo
@@ -34,12 +32,11 @@ function Nav() {
         />
         <SmallLogo
           icon="fas fa-envelope"
-          link="mailto:therobshock@gmail.com"
+          link="mailto:robert.t.bolton@gmail.com"
         />
       </div>
       </div>
     </nav>
-    </div>
   );
 }
 
