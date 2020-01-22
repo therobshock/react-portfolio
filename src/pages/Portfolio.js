@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import PortfolioCard from "../components/PortfolioCard";
 import { Container } from "../components/Grid";
+import apps from "../data/apps.json";
 
 class Portfolio extends Component {
+    state = {
+        apps
+    }
     render() {
         return (
             <Container 
@@ -10,36 +14,16 @@ class Portfolio extends Component {
                 flex="d-flex justify-content-around flex-wrap"
                 style={{paddingTop: "6%"}}
             >
-                <PortfolioCard
-                    image="https://via.placeholder.com/200"
-                    title="App Title"
-                    content="Some quick example text to build on the card title and make up the bulk of the card's content."
-                />
-                <PortfolioCard
-                    image="https://via.placeholder.com/200"
-                    title="App Title"
-                    content="Some quick example text to build on the card title and make up the bulk of the card's content."
-                />
-                <PortfolioCard
-                    image="https://via.placeholder.com/200"
-                    title="App Title"
-                    content="Some quick example text to build on the card title and make up the bulk of the card's content."
-                />
-                <PortfolioCard
-                    image="https://via.placeholder.com/200"
-                    title="App Title"
-                    content="Some quick example text to build on the card title and make up the bulk of the card's content."
-                />
-                <PortfolioCard
-                    image="https://via.placeholder.com/200"
-                    title="App Title"
-                    content="Some quick example text to build on the card title and make up the bulk of the card's content."
-                />
-                <PortfolioCard
-                    image="https://via.placeholder.com/200"
-                    title="App Title"
-                    content="Some quick example text to build on the card title and make up the bulk of the card's content."
-                />
+                {this.state.apps.map(app => (
+                    <PortfolioCard
+                        id={app.id}
+                        key={app.id}
+                        image={app.image}
+                        title={app.title}
+                        about={app.about}
+                        link={app.link}
+                    />
+                ))}
             </Container>
         )
     }
