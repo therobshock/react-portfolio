@@ -1,10 +1,58 @@
 [
     {
         "id": 1,
-        "image": "https://via.placeholder.com/200",
+        "image": "images/app-images/Trivia-Game.png",
         "alt": "app image",
-        "title": "App Title",
+        "title": "The Trivia Awakens",
         "about": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-        "link": "https://www.google.com"
+        "link": "https://therobshock.github.io/TriviaGame/"
+    },
+    {
+        "id": 2,
+        "image": "images/app-images/GYST-JS.png",
+        "alt": "app image",
+        "title": "Get Your **** Together (jQuery)",
+        "about": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "link": "https://therobshock.github.io/to-do-list/"
+    },
+    {
+        "id": 3,
+        "image": "images/app-images/Concert-Concierge.png",
+        "alt": "app image",
+        "title": "Concert Concierge",
+        "about": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "link": "https://eia1981.github.io/Groupprojectone/index.html?"
+    },
+    {
+        "id": 4,
+        "image": "images/app-images/Crystal-Collector.png",
+        "alt": "app image",
+        "title": "Infinity Collector",
+        "about": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "link": "https://therobshock.github.io/infinity-collector/"
+    },
+    {
+        "id": 5,
+        "image": "images/app-images/GetYourShitTogether.png",
+        "alt": "app image",
+        "title": "Get Your **** Together (React)",
+        "about": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "link": "https://get-your-shit-together.herokuapp.com/"
+    },
+    {
+        "id": 6,
+        "image": "images/app-images/doggy-diary.png",
+        "alt": "app image",
+        "title": "Doggy Diary",
+        "about": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "link": "https://pacific-ravine-32817.herokuapp.com/"
+    },
+    {
+        "id": 7,
+        "image": "images/app-images/Train-Scheduler.gif",
+        "alt": "app image",
+        "title": "Train Scheduler",
+        "about": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        "link": "https://therobshock.github.io/trainscheduler/"
     }
 ]
