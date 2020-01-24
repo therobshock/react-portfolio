@@ -1,62 +1,38 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../components/Grid";
+import { Container } from "../components/Grid";
 import { BlogCard } from "../components/BlogCards";
+import blogs from "../data/blogs.json"
 
 class Blogs extends Component {
-/*   state = {
-    books: [],
-    title: "",
-    author: "",
-    synopsis: ""
-  };
 
-  componentDidMount() {
-    this.loadBooks();
-  }
+    state = {
+        blogs
+    }
 
-  loadBooks = () => {
-    API.getBooks()
-      .then(res =>
-        this.setState({ books: res.data, title: "", author: "", synopsis: "" })
-      )
-      .catch(err => console.log(err));
-  };
- */
-
-  render() {
+    render() {
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-6">
+      <Container 
+        fluid
+        flex="d-flex flex-wrap"
+        style={{
+            paddingTop: "6%",
+            boxSizing: "border-box",
+            width: "80%"
+        }}
+      >
+
+          {this.state.blogs.map(blog => (
+
             <BlogCard 
-              avatar="https://via.placeholder.com/50"
-              headline="Headline"
+                id={blog.id}
+                key={blog.id}
+                image={ /* require('../' + blog.image) */ blog.image }
+                headline={blog.headline}
             />
-          </Col>
-          <Col size="md-6">
-            <BlogCard 
-                avatar="https://via.placeholder.com/50"
-                headline="Headline"
-              />
-{/*             {this.state.books.length ? (
-              <List>
-                {this.state.books.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
-                      <strong>
-                        {book.title} by {book.author}
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
- */}          </Col>
-        </Row>
+          ))}
+    
+  
       </Container>
     );
   }

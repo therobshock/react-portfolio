@@ -3,7 +3,7 @@ import './style.css';
 
 export function FeatBlog({ avatar, headline, content }) {
     return (
-        <div class="article-card">
+        <div class="article-card article">
             <div class="avatar">
                 <img src={avatar} alt="placeholder" />
             </div>
@@ -17,14 +17,14 @@ export function FeatBlog({ avatar, headline, content }) {
     )
 }
 
-export function BlogCard({ avatar, headline }) {
+export function BlogCard(props) {
     return (
-        <div class="article-card">
+        <div class="article-card preview">
             <div class="avatar">
-                <img src={avatar} alt="placeholder" />
+                <img src={props.image} alt={props.alt} />
             </div>
             <div class="content">
-                <h2>{headline}</h2>
+                <h2>{props.headline}</h2>
             </div>
         </div>
     )

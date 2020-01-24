@@ -1,7 +1,26 @@
 [
     {
         "id": 1,
-        "headline": "",
+        "image": "https://via.placeholder.com/50",
+        "headline": "Headline",
+        "body": [
+            
+        ],
+        "date": ""
+    },
+    {
+        "id": 2,
+        "image": "https://via.placeholder.com/50",
+        "headline": "Headline",
+        "body": [
+            
+        ],
+        "date": ""
+    },
+    {
+        "id": 3,
+        "image": "https://via.placeholder.com/50",
+        "headline": "Headline",
         "body": [
             
         ],

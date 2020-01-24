@@ -1,15 +1,20 @@
 .article-card {
     background: #eee;
-    width: 80%;
     padding: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    margin: auto;
-    margin-top: 12.5%;
+    margin: 0 auto 40px;
     border-radius: 10px;
     box-shadow: #ccc 5px 5px 5px 5px;
 
+}
+
+.article {
+    width: 80%;
+}
+.preview {
+    width: 45%;
 }
 .avatar {
     padding: 10px;
