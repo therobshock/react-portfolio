@@ -4,7 +4,9 @@
         "image": "https://via.placeholder.com/50",
         "headline": "Headline",
         "body": [
-            
+            "content",
+            "content",
+            "content"
         ],
         "date": ""
     },
@@ -12,9 +14,7 @@
         "id": 2,
         "image": "https://via.placeholder.com/50",
         "headline": "Headline",
-        "body": [
-            
-        ],
+        "body": "content",
         "date": ""
     },
     {

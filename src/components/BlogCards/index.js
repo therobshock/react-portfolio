@@ -1,22 +1,27 @@
 import React from 'react';
 import './style.css';
 
-export function FeatBlog({ avatar, headline, content }) {
+export function FeatBlog(props) {
     return (
         <div class="article-card article">
             <div class="avatar">
-                <img src={avatar} alt="placeholder" />
+                <img src={props.image} alt="placeholder" />
             </div>
             <div class="content">
-                <h2>{headline}</h2>
-                <p>
-                    {content}
-                </p>
+                <h2>{props.headline}</h2>
+                <div>{props.children}</div>
+
             </div>
         </div>
     )
 }
 
+/* export function BlogParagraph({ content }) {
+    return (
+        <p>{content}</p>
+    )
+}
+ */
 export function BlogCard(props) {
     return (
         <div class="article-card preview">

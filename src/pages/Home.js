@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import { FeatBlog } from "../components/BlogCards";
+import { FeatBlog, BlogParagraph } from "../components/BlogCards";
 // import API from "../utils/API";
 // import { Link } from "react-router-dom";
 import { Container } from "../components/Grid";
+import blogs from "../data/blogs.json"
 import "./style.css";
 
 class Home extends Component {
   state = {
-
+    blogs
   };
 
   /* componentDidMount() {
@@ -59,10 +60,15 @@ class Home extends Component {
         }}
       >
         <FeatBlog
-          avatar="https://via.placeholder.com/100"
-          headline="Headline"
-          content="content content content"
-        />
+          image={this.state.blogs[0].image}
+          headline={this.state.blogs[0].headline}
+          >
+            {this.state.blogs[0].body.map(cont => (
+              <p>{cont}</p>
+            ))}
+          </FeatBlog>
+          
+          
       </Container>
     );
   }
