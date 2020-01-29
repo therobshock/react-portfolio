@@ -3,11 +3,11 @@ import './style.css';
 
 export function FeatBlog(props) {
     return (
-        <div class="article-card article">
-            <div class="avatar">
+        <div className="article-card article">
+            <div className="avatar">
                 <img src={props.image} alt="placeholder" />
             </div>
-            <div class="content">
+            <div className="content">
                 <h2>{props.headline}</h2>
                 <div>{props.children}</div>
 
@@ -24,11 +24,11 @@ export function FeatBlog(props) {
  */
 export function BlogCard(props) {
     return (
-        <div class="article-card preview">
+        <div className="article-card preview">
             <div class="avatar">
                 <img src={props.image} alt={props.alt} />
             </div>
-            <div class="content">
+            <div className="content">
                 <h2>{props.headline}</h2>
             </div>
         </div>

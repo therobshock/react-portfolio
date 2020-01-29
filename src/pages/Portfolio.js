@@ -4,9 +4,7 @@ import { Container } from "../components/Grid";
 import apps from "../data/apps.json";
 
 class Portfolio extends Component {
-    state = {
-        apps
-    }
+    
     render() {
         return (
             <Container 
@@ -18,7 +16,7 @@ class Portfolio extends Component {
                     width: "80%"
                 }}
             >
-                {this.state.apps.map(app => (
+                {apps.map(app => (
                     <PortfolioCard
                         id={app.id}
                         key={app.id}
