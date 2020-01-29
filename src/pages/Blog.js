@@ -5,27 +5,30 @@ import blogs from "../data/blogs.json";
 
 class Blog extends Component {
   state = {
-    blog: {}
+    blog: {},
+    body: []
   };
   
   componentDidMount() {
     const id = this.props.match.params.id;
-    console.log(id);
-
-    const blog = blogs.filter(blog => blog.id === id);
-    this.setState({ blog });
+    var blog = blogs.filter(blog => blog.id == id);
+    
+    this.setState({ blog: blog[0], body: blog[0].body });
     
   }
+
+  
   render() {
     return (
       <Container fluid>
         <FeatBlog
           headline={this.state.blog.headline}
           image={this.state.blog.image}
+         
         >
-       {/*  {this.state.blog.body.map(cont => (
-            <p>{cont}</p>
-          ))} */}
+            {this.state.body.map((cont, index) =>(
+                <p key={index}>{cont}</p>
+            ))}
         </FeatBlog>
       </Container>
     );
