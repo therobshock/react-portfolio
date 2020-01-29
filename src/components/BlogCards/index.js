@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export function FeatBlog(props) {
@@ -16,12 +17,6 @@ export function FeatBlog(props) {
     )
 }
 
-/* export function BlogParagraph({ content }) {
-    return (
-        <p>{content}</p>
-    )
-}
- */
 export function BlogCard(props) {
     return (
         <div className="article-card preview">
@@ -29,7 +24,11 @@ export function BlogCard(props) {
                 <img src={props.image} alt={props.alt} />
             </div>
             <div className="content">
-                <h2>{props.headline}</h2>
+                <a href={"/blogs/" + props.link} style={{color: "black"}}>
+                    <h2>{props.headline}</h2>
+
+                </a>
+                
             </div>
         </div>
     )

@@ -17,14 +17,19 @@ class Blog extends Component {
     
   }
 
-  
   render() {
     return (
-      <Container fluid>
+      <Container 
+        fluid
+        flex="d-flex justify-content-center align-items-center"
+        style={{
+          boxSizing: 'border-box',
+          height: '100%',
+        }}
+      >
         <FeatBlog
           headline={this.state.blog.headline}
           image={this.state.blog.image}
-         
         >
             {this.state.body.map((cont, index) =>(
                 <p key={index}>{cont}</p>
