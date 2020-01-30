@@ -2,27 +2,33 @@
     {
         "id": 1,
         "image": "https://via.placeholder.com/50",
-        "headline": "Headline",
+        "headline": "Headline 1",
         "body": [
-            "content",
-            "content",
-            "content"
+            "content1",
+            "content1",
+            "content1"
         ],
         "date": ""
     },
     {
         "id": 2,
         "image": "https://via.placeholder.com/50",
-        "headline": "Headline",
-        "body": "content",
+        "headline": "Headline 2",
+        "body": [
+            "content2",
+            "content2",
+            "content2"
+        ],
         "date": ""
     },
     {
         "id": 3,
         "image": "https://via.placeholder.com/50",
-        "headline": "Headline",
+        "headline": "Headline 3",
         "body": [
-            
+            "content3",
+            "content3",
+            "content3"
         ],
         "date": ""
     }
