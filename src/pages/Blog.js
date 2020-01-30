@@ -10,18 +10,10 @@ class Blog extends Component {
   };
   
   componentDidMount() {
-<<<<<<< HEAD
-    const id = parseInt(this.props.match.params.id);
-    console.log(id);
-
-    const blog = blogs.filter(blog => blog.id === id);
-    this.setState({ blog: blog });
-=======
     const id = this.props.match.params.id;
     var blog = blogs.filter(blog => blog.id == id);
     
     this.setState({ blog: blog[0], body: blog[0].body });
->>>>>>> 317b4ecada9540cffbfabc2b19847f4694c89780
     
   }
 
