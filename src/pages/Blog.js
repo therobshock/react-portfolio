@@ -9,11 +9,11 @@ class Blog extends Component {
   };
   
   componentDidMount() {
-    const id = this.props.match.params.id;
+    const id = parseInt(this.props.match.params.id);
     console.log(id);
 
     const blog = blogs.filter(blog => blog.id === id);
-    this.setState({ blog });
+    this.setState({ blog: blog });
     
   }
   render() {
