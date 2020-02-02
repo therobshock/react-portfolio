@@ -5,6 +5,7 @@ import "./style.css";
 function Nav() {
   return (
     <nav className="navbar">
+          <div className="border-bar"></div>
         <div className="container">
       <div className="logo-field d-flex justify-content-around align-items-center">
         <SmallLogo

@@ -6,7 +6,7 @@
     flex-direction: row;
     margin: 0 auto 40px;
     border-radius: 10px;
-    box-shadow: #ccc 5px 5px 5px 5px;
+    box-shadow: rgb(0, 0, 0) 5px 5px 5px 5px;
 
 }
 
