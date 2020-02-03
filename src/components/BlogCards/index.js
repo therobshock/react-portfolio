@@ -24,7 +24,7 @@ export function BlogCard(props) {
                 <img src={props.image} alt={props.alt} />
             </div>
             <div className="content">
-                <a href={"/blogs/" + props.link} style={{color: "black"}}>
+                <a href={"/blogs/" + props.link}>
                     <h2>{props.headline}</h2>
 
                 </a>

@@ -1,5 +1,22 @@
+/* Image by 
+<a href=
+    "https://pixabay.com/users/denizecenci-6137739/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2785079">
+        denizecenci
+</a>
+from 
+<a href=
+    "https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2785079">
+        Pixabay
+</a> */
+
 .article-card {
-    background: #eee;
+    background: #000;
+    background-image: url(cosmicbg.jpg);
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: blue;
     padding: 10px;
     overflow: hidden;
     display: flex;
