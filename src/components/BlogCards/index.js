@@ -20,7 +20,7 @@ export function FeatBlog(props) {
 export function BlogCard(props) {
     return (
         <div className="article-card preview">
-            <div class="avatar">
+            <div className="avatar">
                 <img src={props.image} alt={props.alt} />
             </div>
             <div className="content">

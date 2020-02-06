@@ -25,11 +25,12 @@ class Blog extends Component {
         style={{
           boxSizing: 'border-box',
           height: '100%',
+          paddingTop: '10%'
         }}
       >
         <FeatBlog
           headline={this.state.blog.headline}
-          image={this.state.blog.image}
+          image={ require('../images/blog-images/Rob-Shock-BW.png')}
         >
             {this.state.body.map((cont, index) =>(
                 <p key={index}>{cont}</p>
