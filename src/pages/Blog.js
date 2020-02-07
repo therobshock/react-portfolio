@@ -4,10 +4,13 @@ import { FeatBlog } from "../components/BlogCards";
 import blogs from "../data/blogs.json";
 
 class Blog extends Component {
-  state = {
-    blog: {},
-    body: []
-  };
+  constructor(props){
+    super(props);
+    this.state = {
+      blog: {},
+      body: []
+    };
+  }
   
   componentDidMount() {
     const id = this.props.match.params.id;
@@ -30,7 +33,7 @@ class Blog extends Component {
       >
         <FeatBlog
           headline={this.state.blog.headline}
-          image={ require('../images/blog-images/Rob-Shock-BW.png')}
+          image={ require(`../images/blog-images/Rob-Shock-BW.png`)}
         >
             {this.state.body.map((cont, index) =>(
                 <p key={index}>{cont}</p>

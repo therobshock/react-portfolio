@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { FeatBlog } from "../components/BlogCards";
-// import API from "../utils/API";
 // import { Link } from "react-router-dom";
 import { Container } from "../components/Grid";
 import blogs from "../data/blogs.json"
