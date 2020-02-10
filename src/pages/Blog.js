@@ -21,6 +21,8 @@ class Blog extends Component {
   }
 
   render() {
+    console.log(this.state.blog.image);
+
     return (
       <Container 
         fluid
@@ -33,7 +35,7 @@ class Blog extends Component {
       >
         <FeatBlog
           headline={this.state.blog.headline}
-          image={ require(`../images/blog-images/Rob-Shock-BW.png`)}
+          image={ require("../images/blog-images/Rob-Shock-BW.png")}
         >
             {this.state.body.map((cont, index) =>(
                 <p key={index}>{cont}</p>

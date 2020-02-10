@@ -27,7 +27,7 @@ class Blogs extends Component {
                 id={blog.id}
                 key={blog.id}
                 link={blog.id}
-                image={ require('../' + blog.image) }
+                image={ require('../images/blog-images/Rob-Shock-BW.png') }
                 headline={blog.headline}
                 
             />

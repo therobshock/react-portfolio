@@ -1,15 +1,15 @@
 import React from 'react';
 import './style.css';
 
-export function FeatBlog(props) {
+export function FeatBlog({ headline, image, children }) {
     return (
         <div className="article-card article">
             <div className="avatar">
-                <img src={props.image} alt="placeholder" />
+                <img src={image} alt="placeholder" />
             </div>
             <div className="content">
-                <h2>{props.headline}</h2>
-                <div>{props.children}</div>
+                <h2>{headline}</h2>
+                <div>{children}</div>
 
             </div>
         </div>
